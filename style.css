@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Noto Serif JP", serif;
+  font-weight: lighter;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+a:hover {
+  opacity: 0.6;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+header {
+  width: 100%;
+  height: 800px;
+  background-image: url(images/main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-bottom: 90px;
+  padding: 30px 20px 0;
+}
+.header-container {
+  max-width: 1100px;
+  height: 404px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo img {
+  height: 60px;
+  width: auto;
+}
+.main-nav ul {
+  display: flex;
+  align-items: center;
+}
+.main-nav li {
+  margin-left: 60px;
+}
+.header-hamburger {
+  display: none;
+}
+.header-btm {
+  text-align: center;
+}
+.header-btm h1 {
+  font-size: 48px;
+}
+
+.section-1 {
+  max-width: 700px;
+  margin: 0 auto 180px;
+}
+.content-ttl {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.contents {
+  width: 100%;
+  margin-bottom: 92px;
+}
+.contents li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+}
+.contents a {
+  display: inline-block;
+}
+.span {
+  font-size: 18px;
+}
+.span-notice {
+  padding: 5px 8px;
+  border: 1px solid #6A808A;
+  margin: 0 30px;
+  font-size: 11px;
+  /* line-height: 26px; */
+}
+
+.section-2 {
+  max-width: 980px;
+  margin: 0 auto 180px;
+}
+.section-2 .contents {
+  display: flex;
+  justify-content: space-between;
+}
+.content-box {
+  width: 430px;
+  text-align: center;
+}
+.const-img {
+  margin-bottom: 30px;
+}
+.content-box p,
+.content-box h2 {
+  margin-bottom: 15px;
+  font-weight: lighter;
+}
+.more {
+  margin: 0;
+  width: 300px;
+  height: auto;
+}
+.const-li {
+  text-align: center;
+}
+.const-btn {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 12px 40px;
+}
+
+.link-to {
+  display: flex;
+}
+.link-to a {
+  width: 100%
+}
+
+footer {
+  background: #000;
+  width: 100%;
+  color: #fff;
+  padding: 30px 170px 10px;
+}
+.footer-top {
+  max-width: 1100px;
+  height: 39px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.footer-nav ul {
+  display: flex;
+}
+.footer-nav li {
+  margin-left: 60px;
+}
+.footer-nav a {
+  color: #fff;
+}
+.footer-logo img {
+  height: 39px;
+  width: auto;
+}
+.footer-btm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 980px) {
+  header {
+    height: 342px;
+    padding: 15px;
+    margin-bottom: 50px;
+  }
+  .header-top {
+    margin-bottom: 112px;
+    height: 26px;
+  }
+  .header-logo img {
+    height: 26px;
+    width: auto;
+  }
+  .header-btm h1 {
+    font-size: 24px;
+  }
+  .main-nav {
+    display: none;
+  }
+  .header-hamburger {
+    display: block;
+  }
+  .header-container {
+    height: 171px;
+  }
+
+  .section-1 {
+    margin: 0 auto 100px;
+    padding: 0 20px;
+  }
+  .content-ttl {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  .span {
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+  .contents li {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .section-2 {
+    width: 100%;
+    margin: 0 auto 110px;
+    padding: 0 20px;
+  }
+  .section-2 .contents {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content-box {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .contents {
+    margin: 0;
+  }
+  .span {
+    display: flex;
+    align-items: center;
+  }
+
+  .link-to {
+    flex-direction: column;
+  }
+
+  footer {
+    /* height: 340px; */
+    padding: 0;
+  }
+  .footer-top {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 288px;
+    padding-top: 32px;
+    margin-bottom: 20px;
+  }
+  .footer-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-nav li {
+    margin-left: 0;
+    margin-bottom: 21px;
+  }
+  .footer-btm {
+    padding-bottom: 15px;
+  }
+}
